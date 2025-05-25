@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Stories</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="story-bar" id="storyBar">Loading stories...</div>
+
+  <div class="story-viewer hidden" id="storyViewer">
+    <div class="story-area" id="storyArea" tabindex="0" aria-label="Story viewer">
+      <img src="" alt="story" id="storyImage" />
+      
+      <!-- Navigation Arrows -->
+      <button id="prevBtn" aria-label="Previous Story" class="nav-arrow left-arrow">&#10094;</button>
+      <button id="nextBtn" aria-label="Next Story" class="nav-arrow right-arrow">&#10095;</button>
+
+      <button id="closeBtn" aria-label="Close Story Viewer">&times;</button>
+      <div id="loadingIndicator" class="loading hidden">Loading...</div>
+    </div>
+  </div>
+
+  <script src="stories.js"></script>
+</body>
+</html>
